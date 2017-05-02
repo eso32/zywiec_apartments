@@ -46,10 +46,13 @@
       </div>
     </div>
   </div>
-  <div class="row" style="height: 500px;">
+  <div class="row">
     <div class="col-sm-6">
       <div class="discount">
         <img src="img/discount.jpg" />
+        <p>
+          Book online and get discount!
+        </p>
       </div>
     </div>
     <div class="col-sm-6">
@@ -78,13 +81,21 @@
   </div>
 </section>
 
-<section class="container map">
-
+<section class="jumbotron map">
+  <div id="googlemaps">
+  </div>
 </section>
+<footer class="jumbotron">
+
+</footer>
   <!-- vendors -->
   <script src="build/js/jquery-3.2.1.min.js"></script>
   <script src="build/js/bootstrap.min.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEfggOKISNNx6Wjn97cnaFm7eq4ke5ScQ&callback=initMap">
+  </script>
   <!-- private -->
   <script src="build/js/app.js"></script>
+  <script src="build/js/map.js"></script>
 </body>
 </html>

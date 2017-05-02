@@ -17,9 +17,6 @@ header.jumbotron {
           box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-section.container {
-  border: 2px red dashed;
-}
 section.container .row.first {
   position: relative;
   top: -100px;
@@ -34,7 +31,7 @@ section.container .row.first .blue .thumb, section.container .row.first .green .
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-bottom: -80px;
+  margin-bottom: -100px;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -61,6 +58,9 @@ section.container .row.first .blue .thumb .text, section.container .row.first .g
   bottom: 0px;
   left: 0px;
 }
+section.container .row {
+  margin-bottom: 30px;
+}
 section.container .row .discount {
   -webkit-box-shadow: 0px 25px 10px -10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 25px 10px -10px rgba(0, 0, 0, 0.3);
@@ -69,7 +69,43 @@ section.container .row .discount img {
   width: 100%;
   height: auto;
 }
+section.container .row .discount p {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 15px;
+  left: 35px;
+}
 
 section.jumbotron {
+  margin: 0px;
   background: #00ADEF;
+  -webkit-box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+section.jumbotron.map {
+  position: relative;
+  margin: 0px;
+  height: 500px;
+  z-index: -1;
+}
+section.jumbotron.map #googlemaps {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer.jumbotron {
+  background: url("../../img/footer.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  margin: 0px;
+  z-index: 1000;
+  -webkit-box-shadow: 0px -10px 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px -10px 10px 5px rgba(0, 0, 0, 0.3);
 }
