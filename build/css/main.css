@@ -68,7 +68,7 @@ section.container .row.first .blue .thumb, section.container .row.first .green .
   width: 100%;
   position: relative;
   overflow: hidden;
-  margin-bottom: -100px;
+  margin-bottom: -70px;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -95,10 +95,8 @@ section.container .row.first .blue .thumb .text, section.container .row.first .g
   bottom: 0px;
   left: 0px;
 }
-section.container .row {
-  margin-bottom: 30px;
-}
 section.container .row .discount {
+  margin-bottom: 30px;
   -webkit-box-shadow: 0px 25px 10px -10px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 25px 10px -10px rgba(0, 0, 0, 0.3);
 }
@@ -185,4 +183,78 @@ footer.jumbotron {
   height: 400px;
   margin: 0px;
   z-index: 1000;
+}
+
+@media screen and (max-width: 760px) {
+  section.container .row.first {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+  }
+  section.container .row.first .blue .thumb, section.container .row.first .green .thumb, section.container .row.first .orange .thumb {
+    -webkit-box-shadow: 0px 25px 10px -10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 25px 10px -10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: -webkit-transform 0.5s linear 0s;
+    transition: -webkit-transform 0.5s linear 0s;
+    transition: transform 0.5s linear 0s;
+    transition: transform 0.5s linear 0s, -webkit-transform 0.5s linear 0s;
+    width: 100%;
+    position: static;
+    overflow: hidden;
+    margin-bottom: 50px;
+    z-index: 1005;
+  }
+  section.container .row.first .blue .thumb:hover, section.container .row.first .green .thumb:hover, section.container .row.first .orange .thumb:hover {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    z-index: 1005;
+  }
+  section.container .row.first .blue .thumb img, section.container .row.first .green .thumb img, section.container .row.first .orange .thumb img {
+    width: 100%;
+    height: auto;
+  }
+
+  section.jumbotron {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    background: #00ADEF;
+    z-index: 1000;
+    height: 400px;
+  }
+  section.jumbotron img {
+    opacity: 0.1;
+    position: absolute;
+    right: 10%;
+    height: 300px;
+    width: auto;
+  }
+  section.jumbotron .container {
+    position: relative;
+  }
+  section.jumbotron .container .comment .photo {
+    border: 4px solid #ddd;
+    float: left;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #111;
+    width: 60px;
+    height: 60px;
+    background: url("../../img/man.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  section.jumbotron .container .comment p {
+    font-size: 16px;
+    margin-left: 80px;
+  }
+  section.jumbotron .container .comment.left {
+    margin-top: 50px;
+  }
+  section.jumbotron .container .comment.left .photo {
+    background: url("../../img/woman.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 }
